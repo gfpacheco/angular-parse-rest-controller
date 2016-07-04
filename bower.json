@@ -1,0 +1,41 @@
+{
+  "name": "angular-parse-rest-controller",
+  "version": "0.0.0",
+  "homepage": "https://github.com/gfpacheco/angular-parse-rest-controller",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gfpacheco/angular-parse-rest-controller.git"
+  },
+  "description": "RESTController for Parse that uses Angular's $http",
+  "authors": [
+    {
+      "name": "Guilherme Pacheco",
+      "email": "guilherme.f.pacheco@gmail.com"
+    }
+  ],
+  "keywords": [
+    "angular",
+    "angularjs",
+    "parse",
+    "http"
+  ],
+  "license": "MIT",
+  "main": [
+    "dist/angular-parse-rest-controller.js"
+  ],
+  "ignore": [
+    "src",
+    "test",
+    "gulpfile.js",
+    "karma-*.conf.js",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular-mocks": ">=1.2.0",
+    "angular": ">=1.2.0",
+    "parse": "^1.8.5"
+  }
+}

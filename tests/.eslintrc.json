@@ -1,0 +1,18 @@
+{
+  "env": {
+    "browser": true,
+    "node": false,
+    "mocha": true
+  },
+  "globals": {
+    "module": true,
+    "inject": true,
+    "sinon": true,
+    "expect": true,
+    "fail": true,
+    "Promise": true
+  },
+  "rules": {
+    "no-empty-function": "off"
+  }
+}
