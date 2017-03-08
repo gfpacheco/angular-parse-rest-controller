@@ -67,13 +67,13 @@
               // After the retry limit is reached, fail
               promise.reject({
                 status: response.status,
-                responseText: JSON.stringify(response.data || {})
+                responseText: angular.toJson(response.data || {})
               });
             }
           } else if (angular.isObject(response.data)) {
             promise.reject({
               status: response.status,
-              responseText: JSON.stringify(response.data)
+              responseText: angular.toJson(response.data)
             });
           } else {
             promise.reject({
@@ -161,7 +161,7 @@
           payload._SessionToken = token;
         }
 
-        var payloadString = JSON.stringify(payload);
+        var payloadString = angular.toJson(payload);
 
         return self.ajax(method, url, payloadString);
       }).fail(function(response) {
@@ -183,7 +183,7 @@
         } else {
           error = new ParseError(
             ParseError.CONNECTION_FAILED,
-            'XMLHttpRequest failed: ' + JSON.stringify(response)
+            'XMLHttpRequest failed: ' + angular.toJson(response)
           );
         }
 
